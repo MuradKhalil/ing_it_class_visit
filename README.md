@@ -1,6 +1,6 @@
 ### Requirements for before the workshop
 1. Install Python (ideally version 3.8)
-1. have your favorite editor set up (VS Code, PyCharm, Atom, etc.)
+1. have your favorite IDE set up (VS Code, PyCharm, Atom, etc.)
 2. clone this repository: https://github.com/MuradKhalil/ing_it_class_visit:
 ```
 $ git clone git@github.com:MuradKhalil/ing_it_class_visit.git
