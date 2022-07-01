@@ -31,5 +31,5 @@ $ kedro jupyter lab
    - fits a model to the training set
    - evaluates model's performance on the test set
 
-5. register the pipeline
+5. register the 2nd pipeline
 6. visualize the pipelines
