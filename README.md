@@ -16,3 +16,20 @@ $ kedro run
 $ kedro viz
 $ kedro jupyter lab
 ```
+
+### Tasks to be done during the workshop
+1. register the input csv files in the **conf/base/catalog.yml** file
+
+2. create a pipeline that
+   - combines 3 input csv files into 1 dataframe
+   - splits data into train and test sets
+   - does feature engineering
+
+3. register the pipeline in **pipeline_registry**
+
+4. create a 2nd pipelline that
+   - fits a model to the training set
+   - evaluates model's performance on the test set
+
+5. register the pipeline
+6. visualize the pipelines

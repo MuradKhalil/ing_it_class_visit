@@ -6,19 +6,19 @@ def create_pipeline(**kwargs):
         [
             node(
                 func=split_data,
-                inputs=['train'],
-                outputs=["X_train", "X_test", "y_train", "y_test"],
-                name="split_data_node",
+                inputs=['example'],
+                outputs=['X', 'y'],
+                name='split_data_node',
             ),
             node(
                 func=train_model,
-                inputs=['X_train', 'y_train'],
+                inputs=['X', 'y'],
                 outputs='model',
                 name='train_model_node'
             ),
             node(
                 func=evaluate_model,
-                inputs=['model', 'X_test', 'y_test'],
+                inputs=['model', 'X', 'y'],
                 outputs=None,
                 name='evaluate_model_node'
             )

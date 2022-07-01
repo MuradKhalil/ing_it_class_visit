@@ -3,6 +3,6 @@
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
 
-train:
+example:
   type: pandas.CSVDataSet
-  filepath: data/01_raw/train.csv
+  filepath: data/01_raw/example.csv
