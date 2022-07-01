@@ -31,5 +31,11 @@ $ kedro jupyter lab
    - fits a model to the training set
    - evaluates model's performance on the test set
 
-5. register the 2nd pipeline
+5. register the pipeline
 6. visualize the pipelines
+
+### Some feature engineering advice:
+ - in order to start a JupyterLab session run: ```$ kedro jupyter lab```
+ - check for missing values and drop or impute those. However, some ML algorithms handle missing values natively
+ - check for categorical variables. One hot encoding is a common and the simplest way to handle those.
+ - scale numeric values
