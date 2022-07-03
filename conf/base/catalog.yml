@@ -6,3 +6,15 @@
 example:
   type: pandas.CSVDataSet
   filepath: data/01_raw/example.csv
+
+train1:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/train1.csv
+
+train2:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/train2.csv
+
+train3:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/train3.csv

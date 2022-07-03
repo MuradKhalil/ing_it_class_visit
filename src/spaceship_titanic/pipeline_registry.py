@@ -2,7 +2,8 @@
 from typing import Dict
 
 from kedro.pipeline import Pipeline, pipeline
-from spaceship_titanic.pipelines import example_pipeline as ep
+from spaceship_titanic.pipelines import data_proc as dp
+from spaceship_titanic.pipelines import data_science as ds
 
 
 def register_pipelines() -> Dict[str, Pipeline]:
@@ -11,9 +12,11 @@ def register_pipelines() -> Dict[str, Pipeline]:
     Returns:
         A mapping from a pipeline name to a ``Pipeline`` object.
     """
-    example_pipeline = ep.create_pipeline()
+    data_proc = dp.create_pipeline()
+    data_science = ds.create_pipeline()
 
     return {
-        "__default__": example_pipeline,
-        "dp": example_pipeline,
+        "__default__": data_proc + data_science,
+        "dp": data_proc,
+        "ds": data_science,
         }
