@@ -18,7 +18,7 @@ $ kedro jupyter lab
 ```
 
 ### Tasks to be done during the workshop
-1. register the input csv files in the **conf/base/catalog.yml** file
+1. register the input csv files (data/01_raw) in the **conf/base/catalog.yml** file
 
 2. create a pipeline that
    - combines 3 input csv files into 1 dataframe
