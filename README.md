@@ -17,6 +17,12 @@ $ kedro viz
 $ kedro jupyter lab
 ```
 
+### Goal of the workshop:
+1. Train a machine learning model that predicts whether passengers of the spaceship titanic reach their destination
+2. Structure your code with Kedro pipelines
+3. Visualize your pipelines
+
+
 ### Tasks to be done during the workshop
 1. register the input csv files (data/01_raw) in the **conf/base/catalog.yml** file
 
@@ -36,6 +42,6 @@ $ kedro jupyter lab
 
 ### Some feature engineering advice:
  - in order to start a JupyterLab session run: ```$ kedro jupyter lab```
- - check for missing values and drop or impute those. However, some ML algorithms handle missing values natively
- - check for categorical variables. One hot encoding is a common way to handle those.
+ - check for missing values and drop or impute those (some ML algorithms handle missing values natively)
+ - check for categorical variables (one hot encoding is a common way to handle those)
  - scale numeric values
