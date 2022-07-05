@@ -31,7 +31,7 @@ $ kedro jupyter lab
    - splits data into train and test sets
    - does feature engineering
 
-3. register the pipeline in **pipeline_registry**
+3. register the pipeline in **src/spaceship_titanic/pipeline_registry.py**
 
 4. create a 2nd pipelline that
    - fits a model to the training set
